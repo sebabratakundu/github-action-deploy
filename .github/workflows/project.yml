@@ -1,0 +1,9 @@
+name: react-app-application
+on: [push]
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy Repo
+        uses: action/checkout@v3
+      - run: tree
