@@ -26,6 +26,6 @@ jobs:
           touch project.json
           echo {"orgId":"\$VERCEL_ORG_ID\","projectId":"\$VERCEL_PROJECT_ID\"} > project.json
       - name: Deploy on Vercel
-        run: npm deploy
+        run: npm run deploy
       - name: Complete
         run: echo 'project build success'
